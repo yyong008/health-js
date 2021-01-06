@@ -1,5 +1,5 @@
 const isEmptyObject = (obj: Object) => {
-    if (Object.prototype.toString.call(obj) === 'object Object') {
+    if (Object.prototype.toString.call(obj) !== 'object Object') {
         return false;
     }
     let name;
