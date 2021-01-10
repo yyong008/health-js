@@ -1,0 +1,33 @@
+# 计划
+
+- [] 引入测试， 计划使用 Cypress 进行测试
+- JavaScript 的基本数据类型
+- isBoolean '[object Boolean]'
+- isString '[object String]'
+- isNumber '[object Number]'
+- isObject '[object Object]'
+- isArray '[object Array]'
+- isFunction  '[object Function]'
+- isUndefined '[object Undefined]'
+- isSymbol '[object Symbol]'
+<!-- - isBigInt ? -->
+- isNaN '[object Number]'
+- isDate '[object Date]'
+- isNull '[object Null]'
+- isRegExp '[object RegExp]'
+- isError '[object Error]'
+- isMap "[object Map]"
+- isWeakMap "[object WeakMap]"
+- isSet "[object Set]"
+- isWeakSet "[object WeakSet]"
+- isArrayBuffer "[object ArrayBuffer]"
+- isSharedArrayBuffer "[object SharedArrayBuffer]"
+- isPromise "[object Promise]"
+- isGeneratorFunction "[object GeneratorFunction]"
+- isGenerator "[object Generator]"
+- isAsyncFunction "[object AsyncFunction]"
+- isReflect "[object Reflect]"
+- isProxy ，好像不行
+- isWebAssembly "[object WebAssembly]"
+- isIntl "[object Intl]"
+- isArguments "[object Arguments]"
