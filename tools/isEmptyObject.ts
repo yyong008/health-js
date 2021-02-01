@@ -1,10 +1,15 @@
+import _toString from '../utils/toString';
+
 const isEmptyObject = (obj: Object) => {
-    if (Object.prototype.toString.call(obj) !== 'object Object') {
+    if (_toString.call(obj) !== '[object Object]') {
         return false;
     }
+
     let name;
+    
     for (name in obj) {
         return false 
-    }
-    return true
+    };
+
+    return true;
 }

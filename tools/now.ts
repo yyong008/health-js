@@ -1,3 +1,5 @@
-export const now = () => {
+const now = () => {
   return new Date();
 }
+
+export default now;

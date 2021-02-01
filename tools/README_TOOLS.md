@@ -45,7 +45,7 @@ javascript 作为弱类型语言，在类型上是很弱的，我们整理一些
 - 工具函数： combineURLs 组合 url
 - 工具函数： 废弃一些方法 deprecatedMethod
 - 工具函数： 解析头部
-- 工具函数： 扩展数组：spread 
+- 工具函数： 扩展数组：spread
 
 ## 参考
 
