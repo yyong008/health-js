@@ -1,0 +1,11 @@
+{
+  "name": "health-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yyong008/health-js.git",
+  "author": "magnesium- <zhuyong@leha.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.38.5"
+  }
+}

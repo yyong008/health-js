@@ -31,3 +31,6 @@
 - isWebAssembly "[object WebAssembly]"
 - isIntl "[object Intl]"
 - isArguments "[object Arguments]"
+
+- [x] 使用 rollup 进行打包输出，本地能够使用
+- [x] 添加 rollup 入口文件，看看这个库要怎么写
