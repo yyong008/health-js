@@ -13,3 +13,5 @@ const isEmptyObject = (obj: Object) => {
 
     return true;
 }
+
+export default isEmptyObject;

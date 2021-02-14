@@ -1,5 +1,5 @@
 // 类数组对象，主要根据长度性质来确定
-function isArrayLike(o) {
+function isArrayLike(o: any) {
     if (
         o && // o 非假值
         typeof o === "object" && // o 是一个对象
