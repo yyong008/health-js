@@ -1,6 +1,6 @@
 import _toString from '../utils/toString';
 
-const isString = (val) => {
+const isString = (val: any) => {
     return _toString.call(val) === '[object String]';
 }
 
