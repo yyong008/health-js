@@ -36,4 +36,4 @@
 - [x] 添加 rollup 入口文件，看看这个库要怎么写
 - [ ] 存在性判断，属性是不是自己的属性
 - [ ] isUndefined
-- [ ] isInstanceOf
+- [ ] isInstanceOf 类型的判断我们要统一接口，这些接口是我们拿来就可以直接用！

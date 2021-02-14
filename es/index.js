@@ -5,10 +5,14 @@ const isUndefined = (val) => {
 };
 
 const isArray = (val) => {
+    // es6
+    if (Array && Array.isArray) {
+        return Array.isArray(val);
+    }
     return _toString.call(val) === '[object Array]';
 };
 
-const isBlob = () => {
+const isBlob = (val) => {
     return _toString.call(val) === '[object Blob]';
 };
 

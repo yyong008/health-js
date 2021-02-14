@@ -6,7 +6,7 @@
   "author": "magnesium- <zhuyong@leha.com>",
   "license": "MIT",
   "scripts": {
-    "build:es": "rollup -c rollup.config.js"
+    "build:es": "rm -rf es && rollup -c rollup.config.js"
   },
   "devDependencies": {
     "rollup": "^2.38.5"
