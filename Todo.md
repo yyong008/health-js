@@ -37,3 +37,11 @@
 - [ ] 存在性判断，属性是不是自己的属性
 - [ ] isUndefined
 - [ ] isInstanceOf 类型的判断我们要统一接口，这些接口是我们拿来就可以直接用！
+- [ ] 添加 git cz 的提交同时也要将changelog 引入。
+- [ ] 引入 cypress 的测试框架，并对我们所写的内容进行测试
+- [ ] 看是否需要 jest 测试，双测试框架并行
+- [ ] 改造成 yarn/workspace 的内容
+  - [ ] types
+  - [ ] date
+  - [ ] 杂乱 tool
+  
