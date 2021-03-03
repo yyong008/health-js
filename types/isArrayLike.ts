@@ -13,3 +13,5 @@ function isArrayLike(o: any) {
     // Then o is array-like
     else return false; // Otherwise it is not
 }
+
+export default isArrayLike;
