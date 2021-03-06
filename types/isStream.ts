@@ -1,7 +1,7 @@
 import isFunction from './isFunction';
 import isObject from './isObject';
 
-const isStream = (val:  any) => {
+const isStream = (val:  any): boolean => {
     return isObject(val) && isFunction(val.pipe);
 }
 

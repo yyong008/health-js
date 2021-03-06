@@ -1,4 +1,4 @@
-const isURLSearchParams = (val: any) => {
+const isURLSearchParams = (val: any): boolean => {
     return (
         typeof URLSearchParams !== "undefined" && val instanceof URLSearchParams
     );

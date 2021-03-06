@@ -1,6 +1,6 @@
 import _toString from '../utils/toString';
 
-const isPlainObject = (val: any) => {
+const isPlainObject = (val: any): boolean => {
     if (_toString.call(val) !== '[object Object]') {
         return false;
     }
