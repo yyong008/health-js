@@ -5,9 +5,12 @@
   "repository": "https://github.com/yyong008/health-js.git",
   "author": "magnesium- <zhuyong@leha.com>",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "cy:open": "cypress open",
-    "build:es": "rm -rf es && rollup -c rollup.config.js"
+    "cy:open": "cypress open"
   },
   "devDependencies": {
     "rollup": "^2.38.5"

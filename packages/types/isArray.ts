@@ -1,4 +1,4 @@
-import _toString from '../utils/toString';
+import _toString from './utils/toString';
 
 const isArray = (val: any): boolean => {
     // es6

@@ -1,4 +1,4 @@
-import _toString from '../utils/toString';
+import _toString from './utils/toString';
 
 const isEmptyObject = (obj: Object): boolean => {
     if (_toString.call(obj) !== '[object Object]') {

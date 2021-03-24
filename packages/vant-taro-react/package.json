@@ -1,0 +1,20 @@
+{
+  "name": "vant-taro-react",
+  "description": "vant 组件在 React Taro 中的实现",
+  "version": "1.0.0",
+  "main": "./esm/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:es": "rm -rf esm && rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@types/react": "^17.0.3",
+    "classnames": "^2.2.6",
+    "rollup": "^2.42.3",
+    "rollup-plugin-scss": "^2.6.1"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  }
+}

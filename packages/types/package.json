@@ -1,0 +1,13 @@
+{
+  "name": "types",
+  "version": "1.0.0",
+  "main": "./esm/index.js",
+  "scripts": {
+    "build:types:es": "rm -rf es && rollup -c rollup.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.2.0",
+    "rollup": "^2.42.3"
+  }
+}

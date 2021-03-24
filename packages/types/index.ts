@@ -1,5 +1,6 @@
 import isUndefined from "./isUndefined";
 import isArray from './isArray';
+import isArrayLike from './isArrayLike';
 import isBlob from './isBlob';
 import isDate from './isDate';
 import isFile from './isFile';
@@ -15,6 +16,7 @@ import isURLSearchParams from './isURLSearchParams';
 
 export default {
     isArray,
+    isArrayLike,
     isBlob,
     isDate,
     isFile,
