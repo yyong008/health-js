@@ -1,4 +1,4 @@
-const now = () => {
+const now = (): Date => {
   return new Date();
 }
 
