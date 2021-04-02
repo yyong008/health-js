@@ -1,5 +1,5 @@
 import typescript from '@rollup/plugin-typescript';
-
+import dts from 'rollup-plugin-dts';
 
 export default {
     input: 'src/index.ts',
@@ -19,16 +19,23 @@ export default {
     //     file: 'iife/index.js',
     //     format: 'iife'
     // },
-    // {
-    //     file: 'umd/index.js',
-    //     format: 'umd'
-    // },
+    {
+        file: 'umd/index.js',
+        format: 'umd',
+        name: 'index.js'
+    },
     {
         file: 'lib/system/index.js',
         format: 'system'
-    }
+    },
+    // {
+    //     file: 'src/index.d.ts',
+    //     output: [{ file: "es/types.d.ts", format: "es" }],
+    //     name: 'index.js'
+    // },
 ],
     plugins: [
-        typescript()
+        typescript(),
+        // dts()
     ]
 }

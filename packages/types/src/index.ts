@@ -18,7 +18,6 @@ import isRegExp from './isRegExp';
 import isSymbol from './isSymbol';
 
 export default {
-
     isArray,
     isArrayLike,
     isBlob,
