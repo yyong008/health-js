@@ -27,6 +27,11 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@types/classnames@^2.2.11":
+  version "2.2.11"
+  resolved "https://registry.npm.taobao.org/@types/classnames/download/@types/classnames-2.2.11.tgz?cache=0&sync_timestamp=1613378322977&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fclassnames%2Fdownload%2F%40types%2Fclassnames-2.2.11.tgz#2521cc86f69d15c5b90664e4829d84566052c1cf"
+  integrity sha1-JSHMhvadFcW5BmTkgp2EVmBSwc8=
+
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
@@ -211,7 +216,7 @@ chalk@^1.1.1:
 
 classnames@^2.2.6:
   version "2.2.6"
-  resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclassnames%2Fdownload%2Fclassnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
 
 cliui@^5.0.0:

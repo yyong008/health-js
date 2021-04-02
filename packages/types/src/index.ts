@@ -13,6 +13,8 @@ import isPlainObject from './isPlainObject';
 import isStream from './isStream';
 import isString from './isString';
 import isURLSearchParams from './isURLSearchParams';
+import isError from './isError';
+import isRegExp from './isRegExp';
 
 export default {
     isArray,
@@ -29,5 +31,7 @@ export default {
     isStream,
     isString,
     isUndefined,
-    isURLSearchParams
+    isURLSearchParams,
+    isRegExp,
+    isError,
 }

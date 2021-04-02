@@ -11,4 +11,8 @@ const variables = {
     STRING_TYPE: '[object String]',
     UNDEFINED_TYPE: '[object Undefined]',
     SYMBOL_TYPE: "[object Symbol]",
+    REGEXP_TYPE: "[object RegExp]",
+    ERROR_TYPE: "[object Error]"
 }
+
+export default variables;

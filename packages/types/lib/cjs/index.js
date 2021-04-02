@@ -1,3 +1,5 @@
+'use strict';
+
 var _toString = Object.prototype.toString;
 
 var isUndefined = function (val) {
@@ -80,6 +82,32 @@ var isURLSearchParams = function (val) {
     return (typeof URLSearchParams !== "undefined" && val instanceof URLSearchParams);
 };
 
+var variables = {
+    ARRAY_TYPE: '[object Array]',
+    BLOB_TYPE: '[object Blob]',
+    DATE_TYPE: '[object Date]',
+    FILE_TYPE: '[object File]',
+    FORMDATA_TYPE: '[object FormData]',
+    FUNCTION_TYPE: '[object Function]',
+    NULL_TYPE: '[object Null]',
+    NUMBER_TYPE: '[object Number]',
+    OBJECT_TYPE: '[object Object]',
+    STRING_TYPE: '[object String]',
+    UNDEFINED_TYPE: '[object Undefined]',
+    SYMBOL_TYPE: "[object Symbol]",
+    REGEXP_TYPE: "[object RegExp]",
+    ERROR_TYPE: "[object Error]"
+};
+
+var isError = function (val) {
+    return _toString.call(val) === variables.ERROR_TYPE;
+};
+
+var isRegExp = function (val) {
+    console.log(variables.REGEXP_TYPE);
+    return _toString.call(val) === variables.REGEXP_TYPE;
+};
+
 var index = {
     isArray: isArray,
     isArrayLike: isArrayLike,
@@ -95,7 +123,9 @@ var index = {
     isStream: isStream,
     isString: isString,
     isUndefined: isUndefined,
-    isURLSearchParams: isURLSearchParams
+    isURLSearchParams: isURLSearchParams,
+    isRegExp: isRegExp,
+    isError: isError
 };
 
-export default index;
+module.exports = index;

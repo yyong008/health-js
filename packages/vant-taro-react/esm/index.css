@@ -1,2 +1,13 @@
-.button {
+.btn {
+  width: 200px;
+  height: 50px;
   color: 'red'; }
+  .btn-default {
+    color: #1890ff; }
+  .btn-primary {
+    color: yellow; }
+  .btn-dashed {
+    color: rgba(0, 0, 0, 0.85);
+    background: #fff;
+    border-color: #d9d9d9;
+    border-style: dashed; }

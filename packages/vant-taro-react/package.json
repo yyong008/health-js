@@ -5,7 +5,7 @@
   "main": "./esm/index.js",
   "license": "MIT",
   "scripts": {
-    "build:es": "rm -rf esm && rollup -c rollup.config.js"
+    "build:es": "rm -rf esm && rollup -c rollup.config.js --watch"
   },
   "dependencies": {
     "@rollup/plugin-typescript": "^8.2.0",
