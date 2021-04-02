@@ -15,8 +15,10 @@ import isString from './isString';
 import isURLSearchParams from './isURLSearchParams';
 import isError from './isError';
 import isRegExp from './isRegExp';
+import isSymbol from './isSymbol';
 
 export default {
+
     isArray,
     isArrayLike,
     isBlob,
@@ -34,4 +36,5 @@ export default {
     isURLSearchParams,
     isRegExp,
     isError,
+    isSymbol,
 }

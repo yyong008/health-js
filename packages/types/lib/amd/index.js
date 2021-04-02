@@ -108,6 +108,10 @@ define(function () { 'use strict';
         return _toString.call(val) === variables.REGEXP_TYPE;
     };
 
+    var isSymbol = function (val) {
+        return _toString.call(val) === variables.SYMBOL_TYPE;
+    };
+
     var index = {
         isArray: isArray,
         isArrayLike: isArrayLike,
@@ -125,7 +129,8 @@ define(function () { 'use strict';
         isUndefined: isUndefined,
         isURLSearchParams: isURLSearchParams,
         isRegExp: isRegExp,
-        isError: isError
+        isError: isError,
+        isSymbol: isSymbol
     };
 
     return index;

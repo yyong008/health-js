@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./esm/index.js",
   "scripts": {
-    "build:types:es": "rm -rf libs && rollup -c rollup.config.js"
+    "build:types:es": "rm -rf lib && rollup -c rollup.config.js"
   },
   "license": "MIT",
   "dependencies": {

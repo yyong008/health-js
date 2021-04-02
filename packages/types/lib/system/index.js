@@ -111,6 +111,10 @@ System.register([], function (exports) {
                 return _toString.call(val) === variables.REGEXP_TYPE;
             };
 
+            var isSymbol = function (val) {
+                return _toString.call(val) === variables.SYMBOL_TYPE;
+            };
+
             var index = exports('default', {
                 isArray: isArray,
                 isArrayLike: isArrayLike,
@@ -128,7 +132,8 @@ System.register([], function (exports) {
                 isUndefined: isUndefined,
                 isURLSearchParams: isURLSearchParams,
                 isRegExp: isRegExp,
-                isError: isError
+                isError: isError,
+                isSymbol: isSymbol
             });
 
         }
