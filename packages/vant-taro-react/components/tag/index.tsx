@@ -6,7 +6,7 @@ type ITagProps = {
 
 const Tag: React.FC<ITagProps> = () =>{
     return (
-        <div></div>
+        <div>test local config?</div>
     )
 }
 
