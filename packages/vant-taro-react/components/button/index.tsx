@@ -29,6 +29,7 @@ const Button: React.FC<ButtonProps> = (props) => {
             [`btn-dashed`]:!!dashed,
         })}>
             <span>{props.children}</span>
+            <i className="van-icon van-icon-alipay"></i>
         </button>
     )
 }

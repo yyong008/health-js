@@ -23,7 +23,7 @@
       "@/*": ["src/*"]
     },
     "typeRoots": [
-      "types.d.ts"
+      "typings.d.ts"
     ]
   },
   "include": ["index.ts", "components/**/*"],
