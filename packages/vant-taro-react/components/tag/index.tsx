@@ -1,13 +1,31 @@
-import React from 'react';
+import React from 'react'
+import Icon from '../icon/index'
 
-type ITagProps = {
-
+export type ITagProps = {
+  size: string
+  mark: boolean
+  color: string
+  plain: boolean
+  round: boolean
+  textColor: string
+  type: string
+  closeable: boolean
 }
 
-const Tag: React.FC<ITagProps> = () =>{
-    return (
-        <div>test local config?</div>
-    )
+const Tag: React.FC<ITagProps> = (props) => {
+  const { children, closeable } = props
+
+  const computedStyle = () => {
+    return {
+      color: 'red',
+    }
+  }
+  return (
+    <div className="" style={computedStyle()}>
+      {children}
+      {closeable ? <Icon custom-class="van-tag__close" /> : null}
+    </div>
+  )
 }
 
-export default Tag;
+export default Tag
