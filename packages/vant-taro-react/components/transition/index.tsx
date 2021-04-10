@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react'
-import './index.scss'
+import './index.scss';
 
 type ITransition = {
   show: boolean
-  customStyle: React.CSSProperties
-  customClass: string;
-  duration: number | string
-  name: string
-  beforeEnterFn: Function
-  enterFn: Function
-  beforeLeaveFn: Function
-  leaveFn: Function;
-  onClick: Function;
-  onTouchmove: Function
+  customStyle?: React.CSSProperties
+  customClass?: string
+  duration?: number | string
+  name?: string
+  beforeEnterFn?: Function
+  enterFn?: Function
+  beforeLeaveFn?: Function
+  leaveFn?: Function
+  onClick?: Function
+  onTouchmove?: Function
 }
 
 const getClassNames = (name: string) => ({
@@ -23,17 +23,23 @@ const getClassNames = (name: string) => ({
 })
 
 const Transition: React.FC<ITransition> = (props) => {
-  const { show = true, name = 'fade', duration, customStyle, children } = props;
+  const {
+    show = true,
+    name = 'fade',
+    duration = 300,
+    customStyle,
+    children,
+  } = props
   const ref = useRef<any>({
     status: '',
     transitionEnded: '',
-  });
-  const [classes, setClasses] = useState<string>('');
-  const [display, setDisplay] = useState<boolean>(false);
-  const [inited, setInited] = useState<boolean>(false);
+  })
+  const [classes, setClasses] = useState<string>('')
+  const [display, setDisplay] = useState<boolean>(false)
+  const [inited, setInited] = useState<boolean>(false)
   const [currentDuration, setCurrentDuration] = useState<number | string>(
     duration,
-  );
+  )
 
   const enter = () => {
     const { beforeEnterFn, enterFn } = props
@@ -58,7 +64,7 @@ const Transition: React.FC<ITransition> = (props) => {
         setClasses(classNames['enter-to'])
       })
     })
-  };
+  }
 
   const leave = () => {
     if (!display) return
@@ -86,7 +92,7 @@ const Transition: React.FC<ITransition> = (props) => {
         setClasses(classNames['leave-to'])
       })
     })
-  };
+  }
 
   const onTransitionEnd = () => {
     if (ref.current.transitionEnded) return
@@ -102,7 +108,7 @@ const Transition: React.FC<ITransition> = (props) => {
     if (!show && display) {
       setDisplay(false)
     }
-  };
+  }
 
   const computedStyle = ({ currentDuration, display, customStyle }: any) => {
     let styles: React.CSSProperties = {}
@@ -116,7 +122,7 @@ const Transition: React.FC<ITransition> = (props) => {
       ...styles,
       ...customStyle,
     }
-  };
+  }
 
   useEffect(() => {
     show ? enter() : leave()

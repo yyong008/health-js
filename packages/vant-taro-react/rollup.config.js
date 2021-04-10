@@ -3,7 +3,7 @@ import scss from 'rollup-plugin-scss';
 export default {
     input: 'index.ts',
     output: {
-        file: 'esm/index.js',
+        file: 'lib/index.js',
         format: 'esm'
     },
     plugins: [
