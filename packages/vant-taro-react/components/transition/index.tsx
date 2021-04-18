@@ -46,12 +46,12 @@ const Transition: React.FC<ITransition> = (props) => {
     const classNames = getClassNames(name)
 
     ref.current.status = 'enter'
-    beforeEnterFn()
+    beforeEnterFn?.()
 
     requestAnimationFrame(() => {
       if (ref.current.status !== 'enter') return
 
-      enterFn()
+      enterFn?.()
       setInited(true)
       setDisplay(true)
       setClasses(classNames.enter)
@@ -73,12 +73,12 @@ const Transition: React.FC<ITransition> = (props) => {
     const classNames = getClassNames(name)
 
     ref.current.status = 'leave'
-    beforeLeaveFn()
+    beforeLeaveFn?.()
 
     requestAnimationFrame(() => {
       if (ref.current.status !== 'leave') return
 
-      leaveFn()
+      leaveFn?.()
       setClasses(classNames.leave)
       setCurrentDuration(duration)
 
@@ -100,9 +100,9 @@ const Transition: React.FC<ITransition> = (props) => {
     ref.current.transitionEnded = true
 
     if (ref.current.status === 'leave') {
-      props.leaveFn()
+      props.leaveFn?.()
     } else if (ref.current.status === 'enter') {
-      props.enterFn()
+      props.enterFn?.()
     }
 
     if (!show && display) {

@@ -23,7 +23,7 @@ const Tag: React.FC<ITagProps> = (props) => {
   return (
     <div className="" style={computedStyle()}>
       {children}
-      {closeable ? <Icon custom-class="van-tag__close" /> : null}
+      {closeable ? <Icon name="close" /> : null}
     </div>
   )
 }

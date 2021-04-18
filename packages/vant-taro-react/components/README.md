@@ -12,3 +12,4 @@
 ## 添加 cypress 的组件测试
 
 - 注意使用 cypress 组件化测试
+- touch 相关的 api 以及使用

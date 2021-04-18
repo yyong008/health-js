@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+const injectDevServer = require("@cypress/react/plugins/react-scripts");
+// import injectDevServer from '@cypress/react/plugins/babel'
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -18,4 +20,7 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  console.log(config);
+  injectDevServer(on, config)
+  return config;
 }

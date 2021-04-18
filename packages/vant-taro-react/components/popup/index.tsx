@@ -21,9 +21,9 @@ const Popup: React.FC<IPopupProps> = (props) =>{
     >
         {children}
         <Icon
-        
+            name="arrow-down" 
         ></Icon>
-    </Overlay> : null}
+    </Overlay> : null
 }
 
 export default Popup;
